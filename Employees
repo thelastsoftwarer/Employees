@@ -1,0 +1,31 @@
+public abstract class akademisyenler extends calisanlar {
+String bolüm,gorevler;
+String dersler;
+public akademisyenler(String adsoyad,String eposta,String telefon,String bolüm, String gorevler, String dersler) {
+	super(adsoyad, eposta, telefon);
+	this.bolüm = bolüm;
+	this.gorevler = gorevler;
+	this.dersler = dersler;
+}
+@Override
+public abstract String giriss() ;
+public String getBolüm() {
+	return bolüm;
+}
+public void setBolüm(String bolüm) {
+	this.bolüm = bolüm;
+}
+public String getGorevler() {
+	return gorevler;
+}
+public void setGorevler(String gorevler) {
+	this.gorevler = gorevler;
+}
+public String getDersler() {
+	return dersler;
+}
+public void setDersler(String dersler) {
+	this.dersler = dersler;
+}
+
+}
