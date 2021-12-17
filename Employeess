@@ -1,0 +1,41 @@
+
+public class calisanlar {
+String adsoyad,eposta;
+int cıkıs=0;
+String telefon;
+static int giris=0;
+public  calisanlar(String adsoyad,String eposta,String telefon) {
+	this.adsoyad=adsoyad;
+	this.eposta=eposta;
+	this.telefon=telefon;
+}
+public String giriss() {
+	return this.adsoyad+" giris yaptı";
+	}
+public void cıkıss() {
+	System.out.println("Çalışan cıkıs yaptı");
+	cıkıs++;
+	System.out.println("calısan "+cıkıs+" defa cıkıs yaptı");
+
+}public void yemek() {
+	System.out.println("calısan yemegini yedi");
+}
+public String getAdsoyad() {
+	return adsoyad;
+}
+public void setAdsoyad(String adsoyad) {
+	this.adsoyad = adsoyad;
+}
+public String getEposta() {
+	return eposta;
+}
+public void setEposta(String eposta) {
+	this.eposta = eposta;
+}
+public String getTelefon() {
+	return telefon;
+}
+public void setTelefon(String telefon) {
+	this.telefon = telefon;
+}
+}
