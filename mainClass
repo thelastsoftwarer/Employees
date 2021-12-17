@@ -1,0 +1,25 @@
+package deneyim;
+
+public class mainn {
+
+	public static void main(String[] args) {
+		// akademisyenler a=new akademisyenler("erkanbicer","erko@hotmail","0555","ceng","dersegir","ceng101");
+		 calisanlar c=new calisanlar("erk","erkos0","0505");
+		// a.setAdsoyad("mehmet gülsu");
+		// System.out.println(a.getAdsoyad());
+		 asistanlar as=new asistanlar("furkanbicer","frukkan@gmail","0531","cengg","dersanlat","ceng102","yardımcı docent","lab102","quizoku");
+		 //System.out.println(as.getQuizlerioku()); 
+		 memurlar m=new memurlar("ahmetköse","ahmet@hotmail","05430","güvenlik","17-24");;
+		// System.out.println(m.getDepartment());
+		 //System.out.println(a.giriss());
+		// System.out.println(as.giriss());
+		 calisanlar[] gir= {as,c,m};
+		 for(calisanlar an:gir) {
+			 System.out.println(an.giriss());
+		 }
+		 calisanlar ca=new asistanlar("erkanbicer","erko@hotmail","0555","ceng","dersegir","ceng101","isletme","laba girildi","quizler okundu");
+		 System.out.println(ca.giriss());
+		 
+	}
+
+}
