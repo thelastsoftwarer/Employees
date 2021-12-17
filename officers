@@ -1,0 +1,28 @@
+package deneyim;
+
+public class memurlar extends calisanlar {
+	String department,mesai;
+
+	public memurlar(String adsoyad, String eposta, String telefon, String department, String mesai) {
+		super(adsoyad, eposta, telefon);
+		this.department = department;
+		this.mesai = mesai;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getMesai() {
+		return mesai;
+	}
+
+	public void setMesai(String mesai) {
+		this.mesai = mesai;
+	}
+	
+	
