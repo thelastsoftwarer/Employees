@@ -1,0 +1,46 @@
+
+
+public  class  asistanlar extends akademisyenler {
+	
+	String yukseklisans,lablaragir,quizlerioku;
+
+	public asistanlar(String adsoyad,String eposta,String telefon,String bolüm, String gorevler, String dersler,String yukseklisans, String lablaragir, String quizlerioku) {
+		super( adsoyad, eposta, telefon, bolüm,  gorevler,  dersler);
+		this.yukseklisans = yukseklisans;
+		this.lablaragir = lablaragir;
+		this.quizlerioku = quizlerioku;
+	}
+
+	public String getYukseklisans() {
+		return yukseklisans;
+	}
+
+	@Override
+	public  String giriss() {
+		
+		return this.yukseklisans + " A kapısından"+" giris yaptı";
+	}
+
+	public void setYukseklisans(String yukseklisans) {
+		this.yukseklisans = yukseklisans;
+	}
+
+	public String getLablaragir() {
+		return lablaragir;
+	}
+
+	public void setLablaragir(String lablaragir) {
+		this.lablaragir = lablaragir;
+	}
+
+	public String getQuizlerioku() {
+		return quizlerioku;
+	}
+
+	public void setQuizlerioku(String quizlerioku) {
+		this.quizlerioku = quizlerioku;
+	}
+
+	
+
+}
